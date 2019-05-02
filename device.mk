@@ -28,11 +28,11 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/fstab.midas:root/fstab.midas \
+    $(LOCAL_PATH)/rootdir/fstab.smdk4x12:root/fstab.smdk4x12 \
     $(LOCAL_PATH)/rootdir/loggy.sh:root/loggy.sh \
-    $(LOCAL_PATH)/rootdir/init.midas.rc:root/init.midas.rc \
-    $(LOCAL_PATH)/rootdir/init.midas.usb.rc:root/init.midas.usb.rc \
-	$(LOCAL_PATH)/recovery/init.recovery.midas.rc:root/init.recovery.midas.rc
+    $(LOCAL_PATH)/rootdir/init.smdk4x12.rc:root/init.smdk4x12.rc \
+    $(LOCAL_PATH)/rootdir/init.smdk4x12.usb.rc:root/init.smdk4x12.usb.rc \
+	$(LOCAL_PATH)/recovery/init.recovery.smdk4x12.rc:root/init.recovery.smdk4x12.rc
 
 # Screen
 PRODUCT_AAPT_CONFIG := normal

@@ -62,7 +62,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 #NEED_KERNEL_MODULE_ROOT := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=ttySAC2,115200 androidboot.hardware=midas androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttySAC2,115200 androidboot.hardware=smdk4x12 androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -81,12 +81,12 @@ BOARD_GPU_DRIVERS := exynos lima swrast
 # Platform
 TARGET_BOARD_PLATFORM := exynos4
 TARGET_SOC := exynos4412
-TARGET_BOOTLOADER_BOARD_NAME := midas
+TARGET_BOOTLOADER_BOARD_NAME := smdk4x12
 
 TARGET_NO_BOOTLOADER := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.midas
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.smdk4x12
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_RECOVERY_BACKLIGHT_PATH := /sys/class/backlight/panel
 TARGET_RECOVERY_UI_BRIGHTNESS_FILE := /sys/class/backlight/panel/brightness

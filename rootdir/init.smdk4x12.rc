@@ -1,4 +1,4 @@
-import /init.midas.usb.rc
+import /init.smdk4x12.usb.rc
 
 on early-init
     exec u:r:modprobe:s0 -- /sbin/modprobe -ad /lib/modules \
